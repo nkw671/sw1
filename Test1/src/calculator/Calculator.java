@@ -1,28 +1,11 @@
-package student;
+package calculator;
 
-import java.util.HashSet;
-import java.util.Set;
+public class Calculator {
 
-public class StudentManager {
-    private Set<String> students = new HashSet<>();
+    public int add(int num1, int num2) {
+        return num1 + num2;
+    }
 
-    //학생 추가
-    public void addStudent(String name) {
-        if (students.contains(name)) {
-            throw new IllegalArgumentException("이미 존재하는 학생입니다: " + name);
-        }
-        students.add(name);
+    public String add(String str1, String str2) {
+        return str1 + str2;
     }
-    
-    //학생 제거
-    public void removeStudent(String name) {
-        if (!students.contains(name)) {
-            throw new IllegalArgumentException("존재하지 않는 학생입니다: " + name);
-        }
-        students.remove(name);
-    }
-    //학생 조회(boolean타입 반환)
-    public boolean hasStudent(String name) {
-        return students.contains(name);
-    }
-}
