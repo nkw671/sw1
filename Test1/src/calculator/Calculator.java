@@ -9,3 +9,4 @@ public class Calculator {
     public String add(String str1, String str2) {
         return str1 + str2;
     }
+}
