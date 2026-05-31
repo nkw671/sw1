@@ -14,7 +14,12 @@ public class Bookmanager {
     }
     
 
-    //remove book 구현해주세요
+    public void removeBook(String name) {
+        if (!books.contains(name)) {
+            throw new IllegalArgumentException("존재하지 않는 책입니다.");
+        }
+        books.remove(name);
+    }
     
 
     public boolean hasBook(String name) {
