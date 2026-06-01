@@ -73,7 +73,7 @@ pipeline {
             echo "Build and test succeeded!"
             sh '''
                 echo "=========================================" > build_result.txt
-                echo " Mission02 Project Build & Test SUCCESS" >> build_result.txt
+                echo " Mission02 빌드성공, 테스트 완료" >> build_result.txt
                 echo " Date: $(date)" >> build_result.txt
                 echo " Target: Bookmanager System (in Test1)" >> build_result.txt
                 echo "=========================================" >> build_result.txt
