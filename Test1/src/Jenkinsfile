@@ -31,10 +31,10 @@ pipeline {
             steps {
                 sh '''
                     echo "[+] Compiling source files..."
-                    # Test1 폴더 안으로 이동한 뒤 src를 탐색합니다.
+                  
                     cd Test1
                     find src -name "*.java" > sources.txt
-                    # 컴파일된 결과물(classes)과 라이브러리(junit.jar)는 한 칸 위(..)에 있으므로 경로를 맞춰줍니다.
+                
                     javac -encoding UTF-8 -d ../${CLASS_DIR} -cp ../${JUNIT_JAR_PATH} @sources.txt
                 '''
             }

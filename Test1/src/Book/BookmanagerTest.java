@@ -11,7 +11,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class BookmanagerTest {
     
-  
+	//검사용 주석
     static Bookmanager manager;
 
     @BeforeAll

@@ -13,14 +13,14 @@ public class Bookmanager {
         books.add(name);
     }
     
-
+"""
     public void removeBook(String name) {
         if (!books.contains(name)) {
             throw new IllegalArgumentException("존재하지 않는 책입니다.");
         }
         books.remove(name);
     }
-    
+    """
 
     public boolean hasBook(String name) {
         return books.contains(name);
